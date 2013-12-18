@@ -149,6 +149,9 @@ class BootStrap {
                 properties.setProperty(IceOptions.BILLING_ACCESS_ROLENAME, prop.getProperty(IceOptions.BILLING_ACCESS_ROLENAME, ""));
                 properties.setProperty(IceOptions.BILLING_ACCESS_EXTERNALID, prop.getProperty(IceOptions.BILLING_ACCESS_EXTERNALID, ""));
 
+                properties.setProperty(IceOptions.APPLICATION_GROUP_NAME, prop.getProperty(IceOptions.APPLICATION_GROUP_NAME, ""));
+                properties.setProperty(IceOptions.RESOURCE_GROUP_NAME, prop.getProperty(IceOptions.RESOURCE_GROUP_NAME, ""));
+
                 if (prop.getProperty(IceOptions.COMPANY_NAME) != null)
                     properties.setProperty(IceOptions.COMPANY_NAME, prop.getProperty(IceOptions.COMPANY_NAME));
                 if (prop.getProperty(IceOptions.COST_PER_MONITORMETRIC_PER_HOUR) != null)

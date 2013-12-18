@@ -148,4 +148,14 @@ public class IceOptions {
     * from email to use when test flag is enabled.
     */
     public static final String NUM_WEEKS_FOR_WEEKLYEMAILS = "ice.weeklyCostEmails_numWeeks";
+
+    /**
+     * what should be displayed in the ui for application grouping
+     */
+    public static final String APPLICATION_GROUP_NAME = "ice.applicationGroupName";
+
+    /**
+     * what should be displayed in the ui for resource grouping
+     */
+    public static final String RESOURCE_GROUP_NAME = "ice.resourceGroupName";
 }

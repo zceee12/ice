@@ -46,6 +46,8 @@ public class ReaderConfig extends Config {
     public final BasicWeeklyCostEmailService costEmailService;
     public final Managers managers;
     public final int monthlyCacheSize;
+    public final String applicationGroupName;
+    public final String resourceGroupName;
 
     /**
      *
@@ -72,6 +74,8 @@ public class ReaderConfig extends Config {
         companyName = properties.getProperty(IceOptions.COMPANY_NAME, "");
         currencySign = properties.getProperty(IceOptions.CURRENCY_SIGN, "$");
         currencyRate = Double.parseDouble(properties.getProperty(IceOptions.CURRENCY_RATE, "1"));
+        applicationGroupName = properties.getProperty(IceOptions.APPLICATION_GROUP_NAME, "Application Group");
+        resourceGroupName = properties.getProperty(IceOptions.RESOURCE_GROUP_NAME, "Resource Group");
 
         this.managers = managers;
         this.applicationGroupService = applicationGroupService;
